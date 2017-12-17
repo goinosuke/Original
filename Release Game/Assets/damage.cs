@@ -13,4 +13,11 @@ public class damage : MonoBehaviour {
 	void Update () {
 		
 	}
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+            {
+
+        }
+    }
 }

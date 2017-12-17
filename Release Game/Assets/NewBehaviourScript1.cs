@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NewBehaviourScript1 : MonoBehaviour {
+public class Score_Script : MonoBehaviour {
     public Text showScore;
     public int score = 0;
 	// Use this for initialization

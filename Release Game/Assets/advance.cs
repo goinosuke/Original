@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class advance : MonoBehaviour {
-    float speed = 1f;
+    float speed = 5f;
 	// Use this for initialization
 	void Start () {
 		
