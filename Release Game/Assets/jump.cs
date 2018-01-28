@@ -16,23 +16,29 @@ public class jump : MonoBehaviour {
         {
             GetComponent<Rigidbody>().velocity = new Vector3(0, 6, 0);
         }
-        /*
-        if (Input.GetKey("a"))
-        {
-            transform.Rotate(0, 0, -25);
+ 
+		if (Input.GetKey("right")){
+			transform.position += new Vector3(5*Time.deltaTime, 0, 0);
         }
-        if (Input.GetKeyUp("a"))
-        {
-            transform.Rotate(0, 0, 0);
-        }
-        if (Input.GetKey("d"))
-        {
-            transform.Rotate(0, 0, 25);
-        }
-        if (Input.GetKey("d"))
-        {
-            transform.rotation = new Quaternion(0,0,0,0);
-        }
-        */
-    }
+
+		if (Input.GetKey("left")){
+			transform.position += new Vector3(-5*Time.deltaTime, 0, 0);
+		}
+	
+		if (Input.GetKeyDown("right"))
+		{
+			transform.Rotate(0, 0, -25);
+		}
+		if (Input.GetKeyDown("left"))
+		{
+			transform.Rotate(0, 0, 25);
+		} 
+		if (Input.GetKeyUp("right"))
+		{
+			transform.Rotate(0, 0, 25);
+		}
+		if (Input.GetKeyUp ("left")) {
+			transform.Rotate (0, 0, -25);
+		}
+}
 }

@@ -222,8 +222,6 @@
     <Compile Include="Assets\advance.cs" />
     <Compile Include="Assets\damage.cs" />
     <Compile Include="Assets\jump.cs" />
-    <Compile Include="Assets\NewBehaviourScript.cs" />
-    <Compile Include="Assets\NewBehaviourScript1.cs" />
     <Compile Include="Assets\scoreScript_1.cs" />
     <Compile Include="Assets\wing_animation_Script.cs" />
   </ItemGroup>
