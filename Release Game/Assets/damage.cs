@@ -22,8 +22,7 @@ public class damage : MonoBehaviour
 	{
 		if (other.gameObject.CompareTag ("Enemy")) {
 			HP -= 1;
-			this.gameObject.GetComponent<BoxCollider>().enabled = false;
-		}
+
 		if (HP <= 0)
 		{
 			SceneManager.LoadScene("GameOver");
@@ -31,4 +30,4 @@ public class damage : MonoBehaviour
 	}
 }
   
-
+}
