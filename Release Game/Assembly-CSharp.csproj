@@ -57,6 +57,7 @@
      <Compile Include="Assets\Enemydamage.cs" />
      <Compile Include="Assets\jump.cs" />
      <Compile Include="Assets\scoreScript_1.cs" />
+     <Compile Include="Assets\StageMaker.cs" />
      <Compile Include="Assets\wing_animation_Script.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/unity2017.2/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

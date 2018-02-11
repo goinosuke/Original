@@ -19,22 +19,27 @@ public class damage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+		
     }
     private void OnTriggerEnter (Collider other)
 	{
 		if (other.gameObject.CompareTag ("Enemy")) {
 			HP -= 1;
+			damage2 pl = GameObject.Find("Player").GetComponent <damage2>();
+			pl.minHP ();
 			rightwing2.SetActive (false);
 			leftwing2.SetActive (false);
 			if (HP <= 0) {
-				SceneManager.LoadScene ("GameOver");
+				//SceneManager.LoadScene ("GameOver");
 			}
 		}
 	 if (other.gameObject.CompareTag ("recovery")) {
+			damage2 pl = GameObject.Find("Player").GetComponent <damage2>();
+			pl.prHP ();
 			rightwing2.SetActive (true);
 			leftwing2.SetActive (true);
-			
+			HP += 1;
+
 	}
 }
   
